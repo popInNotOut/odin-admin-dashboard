@@ -92,7 +92,7 @@ ul {
 
 #header #top-left {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 0.9fr;
     justify-content: start;
     align-items: center;
     gap: 2rem;
