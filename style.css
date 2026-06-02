@@ -76,14 +76,110 @@ ul {
 }
 
 
+
+
+
+
 #header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     border: 5px solid black;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    padding: 2rem 3rem;
+    height: 20vh;
 }
+
+#header #top-left {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-icon {
+    width: 2rem;
+    height: auto;
+}
+
+#search-input-field {
+    background-color: rgb(218, 221, 232);
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 0.5rem;
+}
+
+#header #top-right {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    justify-content: end;
+    align-items: center;
+}
+
+#styled-cat-image-top-right {
+    width: 4.5rem;
+    height: auto;
+}
+
+#morgan-oatley-top-right {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#header #bottom-left {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+#styled-cat-image-bottom-left {
+    width: 6rem;
+    height: auto;
+}
+
+#hi-there-text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#morgan-oatley-bottom-left {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#header #bottom-right {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-button {
+    background-color: rgb(0, 138, 230);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 3rem;
+}
+
+.header-button:hover {
+    background-color: rgb(0, 45, 75);
+}
+
+
+
 
 #article {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     border: 5px solid black;
+    height: 80vh;
 }
