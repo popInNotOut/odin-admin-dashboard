@@ -39,7 +39,7 @@ ul {
     background-color: rgb(0, 138, 230);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
@@ -84,13 +84,16 @@ ul {
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     display: grid;
     grid-template-columns: 7fr 3fr;
     padding: 1.5rem 3rem;
     gap: 1rem;
-    /* height: 20vh; */
-    /* self-note: height value is temporary, remove or comment out later so grid height becomes responsive */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    /* max-height: 20vh; */
+    /* self note: remove or comment out height properties like this so height becomes more responsive */
 }
 
 #header #top-left {
@@ -184,13 +187,13 @@ ul {
     background-color: rgb(218, 221, 232);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border: 5px solid black;
-    /* height: 80vh; */
-    /* self-note: height value is temporary, remove or comment out later so grid height becomes responsive */
+    /* border: 5px solid black; */
     padding: 3rem 3rem 5rem 2rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
+    /* max-height: 80vh; */
+    /* self note: remove or comment out height properties like this so height becomes more responsive */
 }
 
 .article-header-text {
@@ -217,34 +220,35 @@ ul {
     border: none;
     border-radius: 10px;
     border-left: 10px solid rgb(255, 181, 45);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     padding: 2rem 1.5rem;
     gap: 0.5rem;
 }
 
-.article-icon {
-    width: 2rem;
-    height: auto;
-}
-
-.card-header {
+.projects-card .card-header {
     font-size: 1.3rem;
     font-weight: bold;
     display: grid;
     align-content: end;
 }
 
-.card-body {
+.projects-card .card-body {
     color: rgb(105, 105, 105);
 }
 
-.card-footer {
+.projects-card .card-footer {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: end;
     align-items: center;
     gap: 2rem;
+}
+
+.projects-card .card-footer .article-icon {
+    width: 2rem;
+    height: auto;
 }
 
 #announcements-container {
@@ -258,6 +262,29 @@ ul {
     display: grid;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+.announcements-card {
+    display: grid;
+    padding: 1.5rem 0;
+}
+
+.announcements-card .card-header {
+    display: grid;
+    align-content: end;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.announcements-card .card-body {
+    color: rgb(105, 105, 105);
+}
+
+.announcements-card#grey-border-bottom {
+    border-bottom: 2px solid lightgrey; 
 }
 
 #trending-container {
@@ -270,7 +297,29 @@ ul {
     display: grid;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    gap: 1.5rem;
 }
 
+.trending-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.trending-section-image {
+    width: 4rem;
+    height: auto;
+}
+
+.trending-text-container {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.trending-project-name {
+    color: rgb(105, 105, 105);
+}
 
