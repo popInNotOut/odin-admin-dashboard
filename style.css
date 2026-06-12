@@ -48,6 +48,13 @@ ul {
     padding-bottom: 40vh;
 }
 
+@media (max-width: 1439px) {
+    #sidebar {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+}
+
 .sidebar-text {
     justify-self: start;
     align-self: center;
